@@ -5,7 +5,7 @@ MAINTAINER github.com/AjkayAlan
 #Update package lists, install nginx and configure, and cleanup
 RUN apt-get update \
     && apt-get install -y nginx \
-    && cp -rf nginx.config /etc/nginx/ \
+    && cp -rf nginx.conf /etc/nginx/ \
     && cp --parents www/* /data/www/ \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
