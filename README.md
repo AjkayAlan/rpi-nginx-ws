@@ -13,4 +13,4 @@ If you have cloned locally, you can do something like the following instead:
 ## Running
 After building the container, you will want to run it. Note that this is running on localhost on port 8080 so you have to go through the reverse proxy:
 
-`docker run --name rpi-nginx-ws -d -p 127.0.0.1:8080:80 ajkayalan/rpi-nginx-ws:latest`
+`docker run --name rpi-nginx-ws --net rp -d ajkayalan/rpi-nginx-ws:latest`
