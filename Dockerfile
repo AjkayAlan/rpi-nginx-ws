@@ -2,7 +2,7 @@
 FROM resin/rpi-raspbian:jessie-20160831
 MAINTAINER github.com/AjkayAlan
 
-#Update package lists, install nginx, and cleanup
+# Update package lists, install nginx, and cleanup
 RUN apt-get update \
     && apt-get install -y nginx \
     && apt-get clean \
@@ -12,11 +12,11 @@ RUN apt-get update \
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
     && ln -sf /dev/stderr /var/log/nginx/error.log
 
-#Use personal config
+# Use personal config
 COPY nginx.conf /etc/nginx/nginx.conf
 
-#Copy personal website
-COPY www/* /data/www/
+# Copy personal website
+COPY www/ /data/www/
 
 # Expose ports
 EXPOSE 80
