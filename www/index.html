@@ -11,9 +11,13 @@
 
     <title>Alan Kay's Personal Website</title>
 
-    <!-- Application Insights -->
-    <script type="text/javascript">
-        var appInsights = window.appInsights || function (config) { function i(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = "AuthenticatedUserContext", h = "start", c = "stop", l = "Track", a = l + "Event", v = l + "Page", y = u.createElement(o), r, f; y.src = config.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js"; u.getElementsByTagName(o)[0].parentNode.appendChild(y); try { t.cookie = u.cookie } catch (p) { } for (t.queue = [], t.version = "1.0", r = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; r.length;)i("track" + r.pop()); return i("set" + s), i("clear" + s), i(h + a), i(c + a), i(h + v), i(c + v), i("flush"), config.disableExceptionTracking || (r = "onerror", i("_" + r), f = e[r], e[r] = function (config, i, u, e, o) { var s = f && f(config, i, u, e, o); return s !== !0 && t["_" + r](config, i, u, e, o), s }), t }({ instrumentationKey: "2e29798a-154c-4732-b41b-b2a48f672b75" }); window.appInsights = appInsights; appInsights.trackPageView();
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44501204-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
+        gtag('config', 'UA-44501204-1');
     </script>
 
     <!-- Bootstrap Core CSS -->
@@ -106,7 +110,8 @@
                         and storing information because being aware of surroundings means collecting surrounding information
                         and remembering what is there. In hockey, all players must always know where to put the puck. In
                         that same sense, marketing majors must know how to take collected information, and apply it to their
-                        customers.</p>
+                        customers.
+                    </p>
                     <p class="text-faded">Band was also something which truly influenced the person that I am now. I still remember in fourth grade
                         when I was deciding what instrument I wanted to play. I went down to the cafeteria with my class
                         and we all were allowed to try three instruments. I chose percussion, the trumpet, and the clarinet.
@@ -128,7 +133,8 @@
                         bad shape that my mom brought it into her work had had the IT technicians reformat it. That really
                         inspired me to learn more about computers so I would not have an experience like that again. I learned
                         how to reformat a computer, learned how to manage and handle drivers, and how to remove malware and
-                        viruses.</p>
+                        viruses.
+                    </p>
                     <p class="text-faded">Fast forward to today, I am currently on my fourth personal desktop (2 of which I have built myself).
                         I also program for Principal Financial Group and provide technical support to professors in the College
                         of Business at my school, Drake University. Computers taught me how to think methodically and how
@@ -169,7 +175,7 @@
                     <hr class="primary">
                     <div class='embed-responsive' style='padding-bottom:100%'>
                         <object data="files/AlanKayResume.pdf" type="application/pdf" width="100%" height="100%"></object>
-                    </div>                    
+                    </div>
                     <p>If you can not see my resume above or wish to download my resume, <a href="files/AlanKayResume.pdf">click here</a>.</p>
                 </div>
             </div>
